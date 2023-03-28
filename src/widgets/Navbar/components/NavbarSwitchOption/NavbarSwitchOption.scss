@@ -1,0 +1,23 @@
+@import "src/app/constants";
+
+.option{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  color: $dark-grey;
+
+  .option_title{
+    @include text-sm;
+    text-transform: capitalize;
+  }
+
+  .option_icon{
+    display: flex;
+    font-size: 20px;
+  }
+}
+
+

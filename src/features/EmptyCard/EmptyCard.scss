@@ -1,0 +1,38 @@
+@import "src/app/constants";
+
+.empty-card{
+  @include dashed-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: transparent;
+
+  .empty-card_info{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    .empty-card_info_icon{
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      font-size: 20px;
+      color: $iris-100;
+    }
+    .empty-card_info_title{
+      @include text-sm;
+      line-height: 17px;
+      font-weight: 500;
+      width: 100%;
+      text-align: center;
+      color: $iris-100;
+    }
+    .empty-card_info_text{
+      @include text-xs;
+      text-align: center;
+      font-weight: 400;
+      line-height: 15px;
+      color: $grey-600;
+    }
+  }
+}

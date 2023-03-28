@@ -1,0 +1,13 @@
+@import "src/app/constants";
+
+.navbar-switch{
+    .switch-option{
+      &:has(input:checked) .switch-option_label{
+        .option{
+          .option_icon{
+            color: $iris-100;
+          }
+        }
+      }
+    }
+}

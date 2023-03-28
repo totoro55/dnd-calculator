@@ -1,0 +1,26 @@
+@import "../../../app/constants";
+
+.button-outlined {
+  @include text-sm;
+  @include solid-border;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  color: $black;
+  background-color: $white;
+
+
+  &:hover {
+    @include solid-border-hover;
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+}

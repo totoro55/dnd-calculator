@@ -1,0 +1,33 @@
+// colors
+
+$white: #FFFFFF;
+$black: #000000;
+$grey-100: #F3F4F6;
+$grey-200: #E5E7EB;
+$dark-grey: #4D5562;
+$iris-100: #5D5FEF;
+$sky-50: #F0F9FF;
+$grey-600: #6B7280;
+
+//mixins font-size
+
+@mixin text-xs{font-size: .75rem;}
+@mixin text-sm {font-size: .875rem;}
+@mixin text-base {font-size: 1rem;}
+@mixin text-lg {font-size: 1.125rem;}
+@mixin text-xl {font-size: 1.25rem;}
+@mixin text-2xl {font-size: 1.5rem;}
+@mixin text-3xl {font-size: 1.875rem;}
+@mixin text-4xl {font-size: 2.25rem;}
+@mixin text-5xl {font-size: 3rem;}
+@mixin text-6xl {font-size: 4rem;}
+
+//mixins borders
+
+@mixin solid-border {border: 1px solid #E2E3E5;}
+@mixin solid-border-hover {border: 2px solid $iris-100;}
+@mixin dashed-border {border: 2px dashed #C4C4C4;}
+
+
+
+

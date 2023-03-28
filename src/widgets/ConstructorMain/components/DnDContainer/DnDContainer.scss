@@ -1,0 +1,49 @@
+@import "src/app/constants";
+
+.dnd-container{
+  height: 100%;
+  position: relative;
+
+  &:has(.below-all) .dnd-container_content-wrapper:before {
+    content: '';
+    position: absolute;
+    height: 0;
+    border: 1px solid $iris-100;
+    width: 100%;
+    top: -.5rem;
+  }
+
+  &.drag-over .dnd-container_content-wrapper:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    border: 1px solid $iris-100;
+    width: 100%;
+    bottom: -.5rem;
+  }
+
+  &.drag-over-all .dnd-container_content-wrapper:before {
+    content: '';
+    position: absolute;
+    height: 0;
+    border: 1px solid $iris-100;
+    width: 100%;
+    top: -.5rem;
+  }
+
+  .dnd-container_content-wrapper{
+    position: relative;
+    height: fit-content;
+    display: grid;
+    row-gap: 1rem;
+
+  &:has(.empty-card){
+      height: 100%;
+  }
+    .empty-card{
+      &.drag-over{
+        background-color: $sky-50;
+      }
+    }
+  }
+}

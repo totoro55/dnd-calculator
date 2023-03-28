@@ -1,0 +1,48 @@
+@import "src/app/constants";
+
+.dnd-item {
+  background-color: white;
+  border-radius: 4px;
+  z-index: 3;
+  position: relative;
+
+  div {
+    pointer-events: none;
+  }
+
+  &.drag-on {
+    box-shadow: 0 8px 6px 0 rgba(77, 85, 98, 0.15);
+    cursor: move;
+  }
+
+  &.drag-movable {
+    cursor: move;
+  }
+
+  &.drag-disabled {
+    cursor: not-allowed;
+  }
+
+  &.drag-off {
+    opacity: 0.5;
+  }
+
+  &.below:before {
+    content: '';
+    position: absolute;
+    height: 0;
+    border: 1px solid $iris-100;
+    width: 100%;
+    top: -.5rem;
+  }
+
+  &.above:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    border: 1px solid $iris-100;
+    width: 100%;
+    bottom: -.5rem;
+  }
+
+}

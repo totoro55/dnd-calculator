@@ -1,0 +1,29 @@
+@import "src/app/constants";
+
+.calc-display{
+  display: grid;
+  width: 240px;
+  grid-template-rows: repeat(1, 52px);
+  padding: .25rem;
+  border-radius: 4px;
+  .calc-display_result{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    line-height: 44px;
+    font-weight: 800;
+    background-color: $grey-100;
+    padding: .25rem .5rem;
+    border-radius: 6px;
+
+    .text-bg{
+    @include text-4xl;
+    }
+    .text-md{
+      @include text-xl;
+      line-height: 23px;
+      text-align: end;
+    }
+  }
+}

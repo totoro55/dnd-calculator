@@ -1,0 +1,10 @@
+.calc-operators {
+  display: grid;
+  grid-template-columns: repeat(4, 52px);
+  grid-template-rows: repeat(1, 48px);
+  row-gap: .5rem;
+  column-gap: .5rem;
+  padding: .25rem;
+  border-radius: 4px;
+
+}

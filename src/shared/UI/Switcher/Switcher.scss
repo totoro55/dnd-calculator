@@ -1,0 +1,51 @@
+@import "../../../app/constants";
+
+
+.switcher {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+
+  .switcher-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: $grey-100;
+    padding: 1px;
+
+    .switch-option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+
+      .switch-option_label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: .5rem .75rem;
+        border: 1px solid $grey-100;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+      &:has(input:checked) .switch-option_label {
+        background-color: $white;
+        cursor: default;
+      }
+
+      .switch-option_input {
+        display: none;
+      }
+    }
+  }
+}

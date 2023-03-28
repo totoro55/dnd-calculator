@@ -1,0 +1,13 @@
+.calc-digits{
+  display: grid;
+  grid-template-columns: repeat(3, 72px);
+  grid-template-rows: repeat(4, 48px);
+  row-gap: .5rem;
+  column-gap: .5rem;
+  padding: .25rem;
+  border-radius: 4px;
+  button:nth-last-child(2){
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}

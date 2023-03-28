@@ -1,0 +1,7 @@
+.calc-total{
+  width: 100%;
+  display: grid;
+  padding: .25rem;
+  border-radius: 4px;
+  grid-template-rows: repeat(1, 64px);
+}
