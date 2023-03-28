@@ -97,7 +97,7 @@ const DnDItem = ({item, setCurrentItem, group, setGroupItems, currentItem, speci
     return (
         <div className={dndClassName()}
              draggable={item.draggable}
-             onDragStart={e=>onDragStartHandler(item)}
+             onDragStart={()=>onDragStartHandler(item)}
              onDragEnd={e=>onDragEndHandler(e)}
 
              onDragEnter={item.droppable
@@ -116,7 +116,9 @@ const DnDItem = ({item, setCurrentItem, group, setGroupItems, currentItem, speci
                  ? e=>onDropHandler(e, item)
                  : undefined}
 
-             onDoubleClick={()=>dblClickHandleRemove(item)}
+             onDoubleClick={item.droppable
+                ?()=>dblClickHandleRemove(item)
+                : undefined}
         >
             {item.element}
         </div>

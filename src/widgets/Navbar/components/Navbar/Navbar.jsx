@@ -7,7 +7,7 @@ import {useLocation, useNavigate} from "react-router-dom";
 
 const Navbar = () => {
     const [mode, setMode] = useState('/')
-    const navigate = useNavigate();
+    const navigate = useNavigate()
     const location = useLocation()
 
     useEffect(()=>{
